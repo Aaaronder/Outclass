@@ -1,0 +1,187 @@
+@font-face {
+    font-family: Legquinne;
+    src: url(../fonts/Legquinne-Regular.otf);
+}
+
+@font-face {
+    font-family: Lequire DEMO;
+    src: url(../fonts/Lequire.otf);
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+:root{
+    --fontone: Lequire DEMO;
+    --fonttwo: Legquinne;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    margin-top: 25px;
+    position: sticky;
+    top: 25px;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 50px;
+    background-color: #676186;
+    border-radius: 999px;
+    border: #dfdfdf 0.1px solid;
+}
+
+.navigationBar{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo{
+    width: 35px;
+    height: 35px;
+    margin: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+a, .seperator{
+    color: #dfdfdf;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Outfit;
+}
+
+.seperator{
+    cursor: default;
+}
+
+.account{
+    width: 35px;
+    height: 35px;
+    margin: 8px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.logo:hover, .account:hover{
+    cursor: pointer;
+}
+
+@keyframes guitarMove {
+    0%{
+        transform: translate(-400px, 25px) rotate(-20deg);
+    }
+
+    100%{
+        transform: translate(0) rotate(0deg);
+    }
+}
+
+.bg{
+    width: 100%;
+    height: 20vw;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    display: flex;
+    background-image: url(img/background_00000.png);
+    background-position: 0;
+    z-index: -1;
+}
+
+.left, .right{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.guitar{
+    width: 400px;
+    position: absolute;
+    right: 5vw;
+    top: 25px;
+    animation-name: guitarMove;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-delay: 0;
+    animation-timing-function:  cubic-bezier(.63,.14,0,1);
+    pointer-events: none;
+    user-select: none;
+}
+
+@keyframes bigtext{
+    0%{
+        opacity: 0;
+        letter-spacing: 25px;
+        transform: translate(200px, -110%);
+    }
+
+    100%{
+        opacity: 1;
+        letter-spacing: 5px;
+        transform: translate(0, -110%);
+    }
+}
+
+h1{
+    font-family: var(--fontone);
+    color: #dfdfdf;
+    margin: 0;
+    letter-spacing: 5px;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 5vw;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -110%);
+    transform-origin: left;
+    animation-name: bigtext;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    animation-timing-function: cubic-bezier(.63,.14,0,1);
+}
+
+@keyframes smalltext{
+    0%{
+        opacity: 0;
+        line-height: 1000px;
+    }
+
+    100%{
+        opacity: 1;
+        line-height: 1.5em;
+    }
+}
+
+p{
+    font-family: var(--fonttwo);
+    color: #dfdfdf;
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 50%;
+    left: 5vw;
+    -ms-transform: translate(1%, -50%);
+    transform: translate(1%, 10%);
+    animation-name: smalltext;
+    animation-duration: 5.5s;
+    animation-delay: 2.5s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(.63,.14,0,1);
+}
