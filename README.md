@@ -33,17 +33,17 @@ a) Regisztráció és bejelentkezés
 •	Bejelentkezési felület.
 b) Fő funkciók UI-ja
 •	Keresés (szűrők: előadó, hangszerek, stílus).
--	Zeneajánló
--	Szűrés (előadó, hangszerek, stílus)
--	Searchbar
+  -	Zeneajánló
+  -	Szűrés (előadó, hangszerek, stílus)
+  -	Searchbar
 •	Könyvtár
--	Kedvelt zenék
--	Custom lejátszási listák (zenék hozzáadása / törlése) 
+  -	Kedvelt zenék
+  -	Custom lejátszási listák (zenék hozzáadása / törlése) 
 •	Zenelejátszó 
--	Mindig jelenlévő overlay egyszerű vezérlőkkel (szünet, lejátszás, következő)
+  -	Mindig jelenlévő overlay egyszerű vezérlőkkel (szünet, lejátszás, következő)
 •	Profil
--	Személyes adatok (felhasználónév, profilkép)
--	Zene feltöltő ↦ saját zenék
+  -	Személyes adatok (felhasználónév, profilkép)
+  -	Zene feltöltő ↦ saját zenék
   
 ________________________________________
 
