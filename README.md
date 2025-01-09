@@ -44,7 +44,7 @@ b) Fő funkciók UI-ja
 •	Profil
 -	Személyes adatok (felhasználónév, profilkép)
 -	Zene feltöltő ↦ saját zenék
--	
+  
 ________________________________________
 
 4. Backend fejlesztés
